@@ -5,8 +5,8 @@
 FROM ayiinxd/ayiin-userbot:buster
 
 RUN git clone -b juubot https://github.com/ejaanck/juubot /home/juubot/ \
-    && chmod 777 /home/Kazuuserbot \
-    && mkdir /home/Kazuuserbot/bin/
+    && chmod 777 /home/juubot \
+    && mkdir /home/juubot/bin/
 
 COPY ./sample_config.env ./config.env* /home/juubot/
 
